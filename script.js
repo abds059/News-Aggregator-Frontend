@@ -2,9 +2,7 @@ const btn = document.getElementById("btn");
 const news_container = document.getElementById("news-container");
 const select_options = document.getElementById("options");
 
-const BACKEND_BASE_URL = "https://your-backend-name.onrender.com/news"; // 👈 replace with your actual Render URL
 const BASE_URL = "https://news-aggregator-backend-one.vercel.app/api/news";
-
 
 function renderArticles(articles) {
     news_container.innerHTML = '';
