@@ -29,7 +29,7 @@ function renderArticles(articles) {
     });
 }
 
-async function getdata(input = '', category = '') {
+async function getData(input = '', category = '') {
     let url = `${BASE_URL}?`;
 
     if (input.trim() !== '') {
@@ -44,7 +44,7 @@ async function getdata(input = '', category = '') {
         const response = await fetch(url);
         const data = await response.json();
 
-        renderarticles(data.articles);
+        renderArticles(data.articles);
     } catch (error) {
         news_container.innerHTML = `<p>🚨 Error: ${error.message}</p>`;
         console.error("Fetch error:", error);
