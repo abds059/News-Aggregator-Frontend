@@ -44,7 +44,7 @@ async function getData(input = '', category = '') {
 
         renderArticles(data.articles);
     } catch (error) {
-        news_container.innerHTML = `<p>🚨 Error: ${error.message}</p>`;
+        news_container.innerHTML = `<p>Error: ${error.message}</p>`;
         console.error("Fetch error:", error);
     }
 }
