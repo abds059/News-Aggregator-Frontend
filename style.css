@@ -24,7 +24,6 @@ header{
 
 section{
     width: 100%;
-    /* height: 60vh;a */
 }
 
 footer {
@@ -106,3 +105,46 @@ input:hover::placeholder{
     text-decoration: underline;
     color: var(--tertiary-color);
 }
+
+@media screen and (max-width: 440px) {
+
+    #searchbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .search-class {
+        flex: 1 1 100px;
+        max-width: 120px;
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    #searchbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+
+    .search-class {
+        flex: 1 1 100px;
+        max-width: 120px;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
