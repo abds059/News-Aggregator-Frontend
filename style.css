@@ -20,10 +20,12 @@ header{
     height: 20vh;
     text-align: center;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 section{
     width: 100%;
+    margin-top: 2rem;
 }
 
 footer {
@@ -44,8 +46,9 @@ h1{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    height: 20vh;
+    height: 15vh;
     margin: 12px;
+    margin-bottom: 3rem;
 }
 
 input::placeholder {
@@ -73,8 +76,9 @@ input:hover::placeholder{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     margin: 12px;
+    margin-top: 2rem;
     padding: 1rem;
-    border: none; /* remove red border */
+    border: none;
 }
 
 .card {
@@ -115,6 +119,7 @@ input:hover::placeholder{
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5rem;
+        height: 12vh;
     }
 
     .search-class {
@@ -127,6 +132,12 @@ input:hover::placeholder{
     h1 {
         font-size: 2rem;
     }
+
+    header {
+        height: 15vh; 
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 300px) {
@@ -136,6 +147,7 @@ input:hover::placeholder{
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.25rem;
+        height: 10vh;
     }
 
     .search-class {
@@ -148,5 +160,11 @@ input:hover::placeholder{
     h1 {
         font-size: 1.5rem;
     }
+
+    header {
+        height: 12vh;
+        margin-bottom: 1rem;
+    }
+    
 }
 
