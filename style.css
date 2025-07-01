@@ -45,6 +45,7 @@ h1{
     justify-content: center;
     gap: 10px;
     height: 20vh;
+    margin: 12px;
 }
 
 input::placeholder {
